@@ -1,0 +1,710 @@
+/* =========================================================
+   TOCA DO BRUXO - RESPONSIVO PARA NOTEBOOKS / DESKTOPS MENORES
+   Escopo desta versão:
+   - telas abaixo de Full HD
+   - notebooks / telas de 1600px até 1024px
+   - NÃO inclui layout mobile / menu hambúrguer
+   ========================================================= */
+
+/* Mantido do seu responsive.css anterior */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   ATÉ 1600px
+   Ex.: 1600x900, 1536x864 e janelas menores em monitores FHD
+   ========================================================= */
+@media (max-width: 1600px) {
+
+  /* ---------- HOME: CATEGORIAS ---------- */
+
+  .destaques .lista-categorias {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 35px;
+    padding: 0 30px 25px;
+  }
+
+  .destaques .lista-categorias a img {
+    width: clamp(220px, 16vw, 250px);
+    height: clamp(220px, 16vw, 250px);
+    object-fit: cover;
+  }
+
+
+  /* ---------- HOME / QUEM SOMOS: NOSSO MUNDO ---------- */
+
+  .nosso-mundo {
+    gap: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .nosso-mundo .nosso-mundo-texto {
+    max-width: 620px;
+  }
+
+  .nosso-mundo .imagem-container {
+    width: 500px;
+    flex-shrink: 0;
+  }
+
+
+  /* ---------- CATÁLOGO: CATEGORIAS ---------- */
+
+  .destaques-alt .lista-categorias {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 0 30px;
+  }
+
+  .destaques-alt .lista-categorias button img {
+    width: clamp(210px, 15vw, 240px);
+    height: clamp(210px, 15vw, 240px);
+    object-fit: cover;
+  }
+
+
+  /* ---------- CATÁLOGO: CARDS ---------- */
+
+  .catalogo-cards .cards-container {
+    width: min(100%, 1400px);
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .catalogo-cards .cards-container .card-item,
+  .card {
+    width: 100%;
+  }
+
+  .card {
+    max-width: none;
+  }
+
+  .card img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+
+  /* ---------- QUEM SOMOS ---------- */
+
+  .origem-container {
+    gap: 100px;
+  }
+
+  .origem-conteudo {
+    gap: 55px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .origem-conteudo .imagem-container {
+    width: 620px;
+    height: 620px;
+  }
+
+  .origem-conteudo-texto {
+    max-width: 620px;
+  }
+
+  .origem-rodape {
+    width: 100%;
+    max-width: 1250px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+
+  /* ---------- CONTATO ---------- */
+
+  .contato-linha {
+    width: 100%;
+    justify-content: center;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .form-container {
+    width: 720px;
+    flex: 0 1 720px;
+  }
+}
+
+
+/* =========================================================
+   ATÉ 1366px
+   Principal alvo para notebooks 1366x768
+   ========================================================= */
+@media (max-width: 1366px) {
+
+  /* ---------- HEADER ---------- */
+
+  header {
+    height: 90px;
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .logo img {
+    max-width: 175px;
+  }
+
+  .navbar ul {
+    gap: 10px;
+  }
+
+  .navbar a {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .navbar a svg {
+    width: 27px;
+  }
+
+
+  /* ---------- HOME: BANNER ---------- */
+
+  .banner {
+    min-height: 500px;
+  }
+
+  .banner .banner-conteudo {
+    font-size: 34px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .banner .botao-novidades {
+    margin-top: 80px;
+  }
+
+
+  /* ---------- HOME: CATEGORIAS ---------- */
+
+  .destaques .lista-categorias {
+    gap: 28px;
+  }
+
+  .destaques .lista-categorias a img {
+    width: 220px;
+    height: 220px;
+  }
+
+
+  /* ---------- HOME / QUEM SOMOS: NOSSO MUNDO ---------- */
+
+  .nosso-mundo {
+    gap: 40px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .nosso-mundo .nosso-mundo-texto {
+    max-width: 580px;
+    font-size: 19px;
+  }
+
+  .nosso-mundo .imagem-container {
+    width: 420px;
+  }
+
+
+  /* ---------- FALE CONOSCO ---------- */
+
+  .fale-conosco .icones-container {
+    gap: 100px;
+  }
+
+  .fale-conosco .icones-container .whatsapp-container svg {
+    width: 140px;
+    height: 140px;
+  }
+
+  .fale-conosco .icones-container .email-container a img {
+    width: 175px;
+  }
+
+
+  /* ---------- CATÁLOGO: BANNER ---------- */
+
+  .banner-alt {
+    min-height: 500px;
+    gap: 35px;
+  }
+
+  .banner-alt .banner-texto {
+    font-size: 26px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+
+  /* ---------- CATÁLOGO: BARRA DE BUSCA ---------- */
+
+  .searchbar-container {
+    width: 650px;
+    height: 95px;
+  }
+
+  .searchbar-track {
+    left: 11.4%;
+    width: 77.9%;
+    height: 48px;
+  }
+
+  .searchbox {
+    font-size: 18px;
+  }
+
+
+  /* ---------- CATÁLOGO: CATEGORIAS ---------- */
+
+  .destaques-alt .lista-categorias {
+    gap: 24px;
+  }
+
+  .destaques-alt .lista-categorias button img {
+    width: 210px;
+    height: 210px;
+  }
+
+
+  /* ---------- CATÁLOGO: CARDS ---------- */
+
+  .catalogo-cards .cards-container {
+    width: min(100%, 1060px);
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 30px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+
+  /* ---------- QUEM SOMOS ---------- */
+
+  .origem-container {
+    gap: 80px;
+  }
+
+  .origem-texto h1 {
+    font-size: 44px;
+  }
+
+  .origem-texto p {
+    font-size: 18px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .origem-conteudo {
+    gap: 40px;
+  }
+
+  .origem-conteudo .imagem-container {
+    width: 500px;
+    height: 500px;
+  }
+
+  .origem-conteudo-texto {
+    max-width: 560px;
+  }
+
+  .origem-conteudo-texto h2 {
+    font-size: 28px;
+  }
+
+  .origem-conteudo-texto p,
+  .origem-rodape p {
+    font-size: 18px;
+  }
+
+  .origem-rodape {
+    max-width: 1100px;
+  }
+
+
+  /* ---------- CONTATO ---------- */
+
+  .bannergeralt {
+    min-height: 500px;
+  }
+
+  .bannergeralt .bannergeralt-texto {
+    font-size: 26px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 60px;
+  }
+
+  .contato-linha {
+    gap: 24px;
+  }
+
+  .whatsapp-moldura {
+    width: 290px;
+    min-height: 340px;
+  }
+
+  .form-container {
+    width: 680px;
+    flex-basis: 680px;
+  }
+}
+
+
+/* =========================================================
+   ATÉ 1200px
+   Notebooks menores / viewport reduzido
+   Ainda mantém a identidade desktop
+   ========================================================= */
+@media (max-width: 1200px) {
+
+  /* ---------- HEADER ---------- */
+
+  header {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .logo img {
+    max-width: 155px;
+    margin-right: 4px;
+  }
+
+  .navbar ul {
+    gap: 4px;
+  }
+
+  .navbar a {
+    padding: 7px;
+    font-size: 13px;
+  }
+
+
+  /* ---------- HOME: BANNER ---------- */
+
+  .banner {
+    min-height: 470px;
+  }
+
+  .banner .banner-conteudo {
+    font-size: 30px;
+  }
+
+  .banner .botao-novidades {
+    margin-top: 65px;
+  }
+
+
+  /* ---------- HOME: CATEGORIAS ---------- */
+
+  .destaques .lista-categorias {
+    gap: 24px;
+  }
+
+  .destaques .lista-categorias a img {
+    width: 200px;
+    height: 200px;
+  }
+
+
+  /* ---------- HOME / QUEM SOMOS: NOSSO MUNDO ---------- */
+
+  .nosso-mundo {
+    gap: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .nosso-mundo .nosso-mundo-texto {
+    max-width: 540px;
+    font-size: 18px;
+  }
+
+  .nosso-mundo .imagem-container {
+    width: 360px;
+  }
+
+
+  /* ---------- FALE CONOSCO ---------- */
+
+  .fale-conosco .icones-container {
+    gap: 75px;
+  }
+
+
+  /* ---------- CATÁLOGO ---------- */
+
+  .banner-alt {
+    min-height: 470px;
+  }
+
+  .banner-alt .banner-texto {
+    font-size: 23px;
+  }
+
+  .searchbar-container {
+    width: 600px;
+    height: 90px;
+  }
+
+  .searchbar-track {
+    height: 45px;
+    transform: translateY(19px);
+  }
+
+  .destaques-alt .lista-categorias button img {
+    width: 190px;
+    height: 190px;
+  }
+
+  .catalogo-cards .cards-container {
+    width: min(100%, 980px);
+    gap: 24px;
+  }
+
+
+  /* ---------- QUEM SOMOS ---------- */
+
+  .origem-container {
+    gap: 65px;
+  }
+
+  .origem-conteudo {
+    gap: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .origem-conteudo .imagem-container {
+    width: 440px;
+    height: 440px;
+  }
+
+  .origem-conteudo-texto {
+    max-width: 500px;
+  }
+
+  .origem-rodape {
+    max-width: 1000px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+
+  /* ---------- CONTATO ---------- */
+
+  .bannergeralt {
+    min-height: 470px;
+  }
+
+  .contato-linha {
+    gap: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .whatsapp-moldura {
+    width: 270px;
+    min-height: 320px;
+    padding: 20px;
+  }
+
+  .whatsapp-moldura svg {
+    width: 140px;
+    height: 140px;
+  }
+
+  .form-container {
+    width: 620px;
+    flex-basis: 620px;
+    padding: 20px;
+  }
+}
+
+
+/* =========================================================
+   ATÉ 1024px
+   Limite inferior desta versão.
+   NÃO é o layout mobile: o menu continua horizontal.
+   ========================================================= */
+@media (max-width: 1024px) {
+
+  /* ---------- HEADER ---------- */
+
+  header {
+    height: 82px;
+  }
+
+  .logo img {
+    max-width: 135px;
+  }
+
+  .navbar a {
+    padding: 5px;
+    font-size: 12px;
+  }
+
+  .navbar a svg {
+    width: 24px;
+    padding-top: 7px;
+  }
+
+
+  /* ---------- HOME ---------- */
+
+  .banner {
+    min-height: 440px;
+  }
+
+  .banner .banner-conteudo {
+    font-size: 27px;
+  }
+
+  .destaques .lista-categorias a img {
+    width: 180px;
+    height: 180px;
+  }
+
+  .nosso-mundo {
+    gap: 25px;
+    padding-left: 28px;
+    padding-right: 28px;
+  }
+
+  .nosso-mundo .nosso-mundo-texto {
+    max-width: 520px;
+    font-size: 17px;
+  }
+
+  .nosso-mundo .imagem-container {
+    width: 320px;
+  }
+
+  .fale-conosco .icones-container {
+    gap: 55px;
+  }
+
+
+  /* ---------- CATÁLOGO ---------- */
+
+  .banner-alt {
+    min-height: 440px;
+  }
+
+  .banner-alt .banner-texto {
+    font-size: 21px;
+  }
+
+  .searchbar-container {
+    width: 540px;
+    height: 82px;
+  }
+
+  .searchbar-track {
+    height: 42px;
+    transform: translateY(17px);
+  }
+
+  .searchbox {
+    font-size: 16px;
+  }
+
+  .search-icon {
+    width: 44px;
+  }
+
+  .search-icon svg {
+    width: 34px;
+    height: 34px;
+  }
+
+  .destaques-alt .lista-categorias button img {
+    width: 170px;
+    height: 170px;
+  }
+
+  .catalogo-cards .cards-container {
+    width: min(100%, 700px);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+  }
+
+
+  /* ---------- QUEM SOMOS ---------- */
+
+  .origem-texto h1 {
+    font-size: 38px;
+  }
+
+  .origem-conteudo {
+    gap: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .origem-conteudo .imagem-container {
+    width: 390px;
+    height: 390px;
+  }
+
+  .origem-conteudo-texto {
+    max-width: 460px;
+  }
+
+  .origem-conteudo-texto h2,
+  .origem-rodape h3 {
+    font-size: 26px;
+  }
+
+  .origem-conteudo-texto p,
+  .origem-rodape p {
+    font-size: 17px;
+  }
+
+
+  /* ---------- CONTATO ---------- */
+
+  .bannergeralt {
+    min-height: 440px;
+  }
+
+  .bannergeralt .bannergeralt-texto {
+    font-size: 22px;
+  }
+
+  .whatsapp-moldura {
+    width: 250px;
+    min-height: 300px;
+  }
+
+  .whatsapp-moldura svg {
+    width: 125px;
+    height: 125px;
+  }
+
+  .form-container {
+    width: 560px;
+    flex-basis: 560px;
+    padding: 18px;
+  }
+
+  .botao-enviar {
+    min-width: 280px;
+  }
+
+  .rodape {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
