@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800&family=Cinzel+Decorative:wght@700&family=Poppins:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+
+
+  <header>
+    <div class="logo">
+      <img src="../images/tocadobruxologo.png">
+    </div>
+
+    <nav class="navbar">
+      <ul>
+        <li><a href="paginainicial.html">INÍCIO</a></li>
+        <li><a href="quemsomos.html">QUEM SOMOS?</a></li>
+        <li><a href="catalogo.html" class="active">CATÁLOGO</a></li>
+        <li><a href="contato.html">CONTATO</a></li>
+        <li>
+          <a href="">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="witcher-cart" role="img">
+              <path fill="none" stroke="currentColor" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"
+                d="M40,40h80l30,240h280l40-160H150 M150,280l-15,60h280 
+       M180,420 A30,30 0 1,1 179,420 Z 
+       M380,420 A30,30 0 1,1 379,420 Z
+       M250,120 L280,80 L310,120 L280,160 Z 
+       M220,100 L250,50 M340,100 L310,50" />
+              <path fill="currentColor" d="M275,110 l10,-20 l10,20 l-10,10 z" />
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <section class="banner-alt">
+    <div class="banner-texto">
+      <h1>Explore nosso arsenal</h1>
+      <p>Conheça nossas coleções exclusivas e itens únicos de The Witcher</p>
+    </div>
+
+    <form class="searchbar-container">
+      <img src="../images/moldura.png" class="moldura">
+
+      <div class="searchbar-track">
+        <input type="text" class="searchbox" placeholder="O que procuras, Bruxo?">
+
+        <button type="submit" class="search-icon" aria-label="Pesquisar">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M10 4a6 6 0 1 1 0 12a6 6 0 0 1 0-12zm0 2a4 4 0 1 0 0 8a4 4 0 0 0 0-8zm5.71 9.29l4 4l-1.42 1.42l-4-4z" />
+          </svg>
+        </button>
+      </div>
+    </form>
+  </section>
+
+
+  <section class="destaques-alt">
+    <ul class="lista-categorias">
+      <li>
+        <button data-category="acessorios"><img src="../images/icone-acessorios.png"></button>
+        <span>acessórios</span>
+      </li>
+
+      <li>
+        <button data-category="espadas-prata"><img src="../images/espadasdeprata.png"></button>
+        <span>espadas de prata</span>
+      </li>
+
+      <li>
+        <button data-category="espadas-aco"><img src="../images/espadasdeaço.png"></button>
+        <span>Espadas de aço</span>
+      </li>
+
+      <li>
+        <button data-category="roupas"><img src="../images/icone-roupas.png"></button>
+        <span>roupas</span>
+      </li>
+
+      <li>
+        <button data-category="item-tematico"><img src="../images/icone-itenstematicos.png"></button>
+        <span>itens temáticos</span>
+      </li>
+    </ul>
+  </section>
+
+
+  <section class="catalogo-cards">
+
+
+    <ul class="cards-container">
+
+
+
+      <li class="card-item" data-category="espadas-aco">
+        <article class="card">
+          <img src="../images/wolfsteelsword.jpg">
+          <h3 class="card-titulo">Espada do lobo grão-mestre</h3>
+          <ul class="card-atributos">
+            <li>Material: Aço</li>
+            <li>Runas: Três encaixes Rúnicos</li>
+            <li>Peso: 1800g</li>
+            <li>Comprimento: 120 cm</li>
+            <li>Largura: 5 cm</li>
+          </ul>
+          <button class="card-botao">adicionar ao carrinho</button>
+        </article>
+      </li>
+
+      <li class="card-item" data-category="espadas-aco">
+        <article class="card">
+          <img src="../images/iris.jpg">
+          <h3 class="card-titulo">Iris</h3>
+          <ul class="card-atributos">
+            <li>Material: Aço</li>
+            <li>Runas: Gravações ornamentais Ofieri</li>
+            <li>Peso: 1600g</li>
+            <li>Comprimento: 115 cm</li>
+            <li>Largura: 4,5 cm</li>
+          </ul>
+          <button class="card-botao">adicionar ao carrinho</button>
+        </article>
+      </li>
+
+      <li class="card-item" data-category="espadas-aco">
+        <article class="card">
+          <img src="../images/scoiataelsteelsword.jpg">
+          <h3 class="card-titulo">Espada Scoia'Tael</h3>
+          <ul class="card-atributos">
+            <li>Material: Aço</li>
+            <li>Runas: Inscrições élficas antigas</li>
+            <li>Peso: 1400g</li>
+            <li>Comprimento: 110 cm</li>
+            <li>Largura: 4 cm</li>
+          </ul>
+          <button class="card-botao">adicionar ao carrinho</button>
+        </article>
+      </li>
+
+      <li class="card-item" data-category="espadas-aco">
+        <article class="card">
+          <img src="../images/griffinsteelsword.jpg">
+          <h3 class="card-titulo">Espada do Grifo Superior</h3>
+          <ul class="card-atributos">
+            <li>Material: Aço</li>
+            <li>Runas: Símbolos da Escola do Grifo</li>
+            <li>Peso: 1900g</li>
+            <li>Comprimento: 122 cm</li>
+            <li>Largura: 5,2 cm</li>
+          </ul>
+          <button class="card-botao">adicionar ao carrinho</button>
+        </article>
+      </li>
+
+      <li class="card-item" data-category="espadas-prata">
+        <article class="card">
+          <img src="../images/aerondight.jpg">
+          <h3 class="card-titulo">Aerondight</h3>
+          <ul class="card-atributos">
+            <li>Material: Prata</li>
+            <li>Runas: Encantamento sagrado lunar</li>
+            <li>Peso: 1700g</li>
+            <li>Comprimento: 119 cm</li>
+            <li>Largura: 4,8 cm</li>
+          </ul>
+          <button class="card-botao">adicionar ao carrinho</button>
+        </article>
+      </li>
+
+      <li class="card-item" data-category="espadas-prata">
+        <article class="card">
+          <img src="../images/silverswordgriffin.jpg">
+          <h3 class="card-titulo">Espada do grifo Grão-Mestre</h3>
+          <ul class="card-atributos">
+            <li>Material: Prata</li>
+            <li>Runas: Selos rúnicos do Grifo</li>
+            <li>Peso: 1800g</li>
+            <li>Comprimento: 121 cm</li>
+            <li>Largura: 5 cm</li>
+          </ul>
+          <button class="card-botao">adicionar ao carrinho</button>
+        </article>
+      </li>
+
+      <li class="card-item" data-category="espadas-prata">
+        <article class="card">
+          <img src="../images/geraltsilversword.jpg">
+          <h3 class="card-titulo">Espada do Geralt</h3>
+          <ul class="card-atributos">
+            <li>Material: Prata</li>
+            <li>Runas: Gravações de bruxo antigas</li>
+            <li>Peso: 1750g</li>
+            <li>Comprimento: 120 cm</li>
+            <li>Largura: 4,7 cm</li>
+          </ul>
+          <button class="card-botao">adicionar ao carrinho</button>
+        </article>
+      </li>
+
+      <li class="card-item" data-category="espadas-prata">
+        <article class="card">
+          <img src="../images/ziraelsilversword.jpg">
+          <h3 class="card-titulo">Zireael</h3>
+          <ul class="card-atributos">
+            <li>Material: Prata</li>
+            <li>Runas: Inscrições élficas finas</li>
+            <li>Peso: 1500g</li>
+            <li>Comprimento: 118 cm</li>
+            <li>Largura: 4,2 cm</li>
+          </ul>
+          <button class="card-botao">adicionar ao carrinho</button>
+        </article>
+      </li>
+
+
+
+      <li class="card-item" data-category="acessorios">
+        <article class="card">
+          <img src="../images/medalhaolobo.png">
+          <h3 class="card-titulo">Medalhão Escola do Lobo</h3>
+          <ul class="card-atributos">
+            <li>Material: Liga metálica</li>
+            <li>Runas: Escola do Lobo</li>
+            <li>Peso: 180g</li>
+            <li>Comprimento: 7cm</li>
+            <li>Largura: 6cm</li>
+          </ul>
+          <button class="card-botao">adicionar ao carrinho</button>
+        </article>
+      </li>
+
+      <li class="card-item" data-category="acessorios">
+        <article class="card">
+          <img src="../images/medalhaogato.png">
+          <h3 class="card-titulo">Colar da Ciri(Escola do gato)</h3>
+          <ul class="card-atributos">
+            <li>Material: Zamac e cordão</li>
+            <li>Runas: Escola do Gato</li>
+            <li>Peso: 170g</li>
+            <li>Comprimento: 7cm</li>
+            <li>Largura: 7cm</li>
+          </ul>
+          <button class="card-botao">adicionar ao carrinho</button>
+        </article>
+      </li>
+
+      <li class="card-item" data-category="acessorios">
+        <article class="card">
+          <img src="../images/medalhaogrifo.png">
+          <h3 class="card-titulo">Medalhão Escola do Grifo</h3>
+          <ul class="card-atributos">
+            <li>Material: Liga metálica envelhecida</li>
+            <li>Runas: Símbolo da Escola do Grifo</li>
+            <li>Peso: 160g</li>
+            <li>Comprimento: 6cm</li>
+            <li>Largura: 5cm</li>
+          </ul>
+          <button class="card-botao">adicionar ao carrinho</button>
+        </article>
+      </li>
+
+      <li class="card-item" data-category="acessorios">
+        <article class="card">
+          <img src="../images/chaveiroliche.png">
+          <h3 class="card-titulo">Chaveiro Liche</h3>
+          <ul class="card-atributos">
+            <li>Material: Metal e resina</li>
+            <li>Runas: Símbolo sombrio</li>
+            <li>Peso: 70g</li>
+            <li>Comprimento: 9cm</li>
+            <li>Largura: 4cm</li>
+          </ul>
+          <button class="card-botao">adicionar ao carrinho</button>
+        </article>
+      </li>
+
+      <!-- ITENS TEMÁTICOS -->
+
+      <li class="card-item" data-category="item-tematico">
+        <article class="card">
+          <img src="../images/canecakaermorhen.png">
+          <h3 class="card-titulo">Caneca Kaer Morhen</h3>
+          <ul class="card-atributos">
+            <li>Material: Madeira Rústica</li>
+            <li>Runas: Brasão gravado</li>
+            <li>Peso: 380g</li>
+            <li>Comprimento: 10cm</li>
+            <li>Largura: 8cm</li>
+          </ul>
+          <button class="card-botao">adicionar ao carrinho</button>
+        </article>
+      </li>
+
+      <li class="card-item" data-category="item-tematico">
+        <article class="card">
+          <img src="../images/posterwildhunt2.png">
+          <h3 class="card-titulo">Pôster Wild Hunt</h3>
+          <ul class="card-atributos">
+            <li>Material: Papel couché</li>
+            <li>Runas: Arte temática</li>
+            <li>Peso: 110g</li>
+            <li>Comprimento: 42cm</li>
+            <li>Largura: 29cm</li>
+          </ul>
+          <button class="card-botao">adicionar ao carrinho</button>
+        </article>
+      </li>
+
+      <li class="card-item" data-category="item-tematico">
+        <article class="card">
+          <img src="../images/mapa_continente.png">
+          <h3 class="card-titulo">Mapa do Continente</h3>
+          <ul class="card-atributos">
+            <li>Material: Papel premium</li>
+            <li>Runas: Marcação temática</li>
+            <li>Peso: 120g</li>
+            <li>Comprimento: 42cm</li>
+            <li>Largura: 29cm</li>
+          </ul>
+          <button class="card-botao">adicionar ao carrinho</button>
+        </article>
+      </li>
+
+      <li class="card-item" data-category="item-tematico">
+        <article class="card">
+          <img src="../images/caixagwent.png">
+          <h3 class="card-titulo">Caixa de Gwent</h3>
+          <ul class="card-atributos">
+            <li>Material: Madeira MDF</li>
+            <li>Runas: Gravação temática</li>
+            <li>Peso: 820g</li>
+            <li>Comprimento: 28cm</li>
+            <li>Largura: 20cm</li>
+          </ul>
+          <button class="card-botao">adicionar ao carrinho</button>
+        </article>
+      </li>
+
+      <!-- ROUPAS -->
+
+      <li class="card-item" data-category="roupas">
+        <article class="card">
+          <img src="../images/moletomescoladolobo.png">
+          <h3 class="card-titulo">Moletom Escola do Lobo</h3>
+          <ul class="card-atributos">
+            <li>Material: Algodão premium</li>
+            <li>Runas: Símbolo da Escola do Lobo</li>
+            <li>Peso: 650g</li>
+            <li>Comprimento: Tam. M</li>
+            <li>Largura: Corte padrão</li>
+          </ul>
+          <button class="card-botao">adicionar ao carrinho</button>
+        </article>
+      </li>
+
+
+      <li class="card-item" data-category="roupas">
+        <article class="card">
+          <img src="../images/camisetakaermorhen.png">
+          <h3 class="card-titulo">Camiseta Kaer Morhen</h3>
+          <ul class="card-atributos">
+            <li>Material: Algodão 100%</li>
+            <li>Runas: Brasão Kaer Morhen</li>
+            <li>Peso: 220g</li>
+            <li>Comprimento: Tam. M</li>
+            <li>Largura: Corte regular</li>
+          </ul>
+          <button class="card-botao">adicionar ao carrinho</button>
+        </article>
+      </li>
+
+
+      <li class="card-item" data-category="roupas">
+        <article class="card">
+          <img src="../images/armaduranilfgaardiana.png">
+          <h3 class="card-titulo">Armadura Nilfgaardiana</h3>
+          <ul class="card-atributos">
+            <li>Material: Ferro fundido</li>
+            <li>Runas: Brasão imperial</li>
+            <li>Peso: 1200g</li>
+            <li>Comprimento: Tam. PP</li>
+            <li>Largura: Recorte lateral </li>
+          </ul>
+          <button class="card-botao">adicionar ao carrinho</button>
+        </article>
+      </li>
+
+
+      <li class="card-item" data-category="roupas">
+        <article class="card">
+          <img src="../images/vestidoyennefer.png">
+          <h3 class="card-titulo">Vestido Yennefer</h3>
+          <ul class="card-atributos">
+            <li>Material: Algodão reforçado</li>
+            <li>Runas: Símbolo Wild Hunt</li>
+            <li>Peso: 240g</li>
+            <li>Comprimento: Tam. M</li>
+            <li>Largura: Corte regular</li>
+          </ul>
+          <button class="card-botao">adicionar ao carrinho</button>
+        </article>
+      </li>
+
+
+
+
+
+    </ul>
+  </section>
+
+  <!-- ENCOMENDAS -->
+  <section class="encomendas">
+    <h1>Pronta entrega e encomendas</h1>
+    <div class="botao-orcamento">
+      <a>Solicitar orçamento/encomenda</a>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section class="fale-conosco">
+    <h1>fale conosco</h1>
+    <div class="icones-container">
+      <div class="whatsapp-container">
+        <a>
+          <svg viewBox="0 0 24 24" width="0" height="0" fill="url(#goldGradient)">
+            <path
+              d="M20.52 3.48A11.8 11.8 0 0012.01 0C5.38 0 .02 5.36.02 11.99c0 2.11.55 4.17 1.6 6L0 24l6.2-1.62a11.9 11.9 0 005.81 1.48h.01c6.63 0 11.99-5.36 11.99-11.99 0-3.2-1.25-6.2-3.49-8.39zM12.02 21.3c-1.8 0-3.56-.48-5.1-1.39l-.36-.21-3.68.96.98-3.59-.23-.37a9.26 9.26 0 01-1.43-4.94c0-5.12 4.17-9.29 9.31-9.29 2.49 0 4.83.97 6.6 2.74a9.27 9.27 0 012.72 6.6c0 5.13-4.17 9.29-9.31 9.29zm5.1-6.93c-.28-.14-1.64-.81-1.9-.9-.25-.09-.43-.14-.62.14-.18.28-.71.9-.87 1.09-.16.18-.32.21-.6.07-.28-.14-1.17-.43-2.23-1.36-.82-.73-1.37-1.63-1.53-1.9-.16-.28-.02-.43.12-.57.13-.13.28-.32.42-.48.14-.16.18-.28.28-.46.09-.18.05-.34-.02-.48-.07-.14-.62-1.5-.85-2.05-.22-.53-.44-.46-.62-.47h-.53c-.18 0-.48.07-.73.34-.25.28-.96.94-.96 2.3 0 1.36.98 2.67 1.12 2.85.14.18 1.93 2.95 4.68 4.13.65.28 1.16.45 1.56.58.66.21 1.26.18 1.73.11.53-.08 1.64-.67 1.87-1.32.23-.64.23-1.2.16-1.32-.07-.11-.25-.18-.53-.32z" />
+            <defs>
+              <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#fff6b0" />
+                <stop offset="25%" stop-color="#f0d98a" />
+                <stop offset="50%" stop-color="#ceb62c" />
+                <stop offset="75%" stop-color="#a88f1f" />
+                <stop offset="100%" stop-color="#fff2a6" />
+              </linearGradient>
+            </defs>
+
+          </svg>
+        </a>
+        <p>whatsapp</p>
+      </div>
+
+      <div class="email-container">
+        <a><img src="../images/icone-email.png"></a>
+        <p>e-mail</p>
+      </div>
+    </div>
+  </section>
+<script src="../js/filtro-catalogo.js"></script>
+</body>
+
+</html>
